@@ -13,7 +13,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -41,7 +41,6 @@ ol {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .content {
@@ -50,7 +49,6 @@ ol {
   justify-content: center;
   align-items: flex-end;
   gap: 30px;
-  width: 1140px;
   width: 1140px;
   height: 534px;
 }
@@ -61,33 +59,20 @@ ol {
 }
 
 .result__video-container {
+  position: relative;
+  box-sizing: border-box;
   width: 711px;
   height: 386px;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  margin-bottom: 16px;
 }
 
 .result__video {
+  position: relative;
   width: 100%;
-  height: 100%;
-}
-
-.content__video-card {
-  display: flex;
-}
-
-.content__video-card-thumbnail {
-  width: 100%;
-}
-
-.content__details {
-  width: 35%;
-}
-
-.content__list {
-  height: 298px;
-  overflow-y: auto;
 }
 
 .search-form {
@@ -95,11 +80,51 @@ ol {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  margin-top: 20px;
 }
 
 .search-form__fieldset {
-  border: 1px solid #fff;
+  width: 225px ;
+  border: none;
+}
+
+.search-form__fieldset-title {
+  font-family: "Fira Sans Condensed";
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.search-form__label:active {
+  outline: 1px solid white;
+}
+
+.input:focus-visible {
+  outline: 1px solid white;
+  outline-offset: 2px;
+} 
+
+.input {
+  border: none; 
+  outline: none;
+  background-color: transparent; 
+  padding: 0; 
+  margin: 0;
+  font: inherit;
+  color: #fff;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 2px;
+}
+
+.search-form__label-text {
+
+}
+
+.search-form__textfield {
+  font-family: "Fira Sans Condensed";
+  font-weight: 400;
+  font-size: 18px;
+  background-color: transparent;
 }
 
 .search-form__pseudo-checkbox {
@@ -114,6 +139,8 @@ ol {
   border: 1px solid #fff;
   color: #fff;
   background-color: transparent;
+  font-family: inherit;
+  font-size: 18px;
 }
 
 .visually-hidden {
@@ -124,10 +151,10 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
-} 
+}
 
 .title {
-  font-family: Oswald;
+  font-family: 'Oswald';
   width: 260px;
   height: 210px;
   font-style: normal;
@@ -136,11 +163,14 @@ ol {
   line-height: 70.5px;
   text-transform: uppercase;
   color: #fff;
-
+  margin-bottom: 22px;
 }
 
-.content__details{
+.content__details {
+  margin: 0;
+  padding: 0;
   flex: 399 1 0;
+  height: 100%;
 }
 
 .content__accent {
@@ -149,11 +179,105 @@ ol {
 }
 
 .content__accent::after {
-  content: '-';
+  content: "-";
   position: relative;
-  top: -10px; /* Поднять тире */
+  top: -10px;
 }
 
-.content__list{  
-  padding-top: 26px;
+/*ТЕМПЛЕЙТЫ*/
+
+.content__list {
+
+}
+
+.content__video-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+}
+
+.content__video-card-thumbnail {
+  max-width: 100%; 
+  max-height: 107px;
+  display: block;
+}
+
+.content__video-card-description-container {
+  width: 100%;
+}
+
+.search-form__submit-button {
+  width: 194px;
+  height: 34px;
+  margin-bottom: 3px;
+}
+
+.content__details {
+  width: 35%;
+}
+
+.content__list {
+  position: relative;
+  height: 298px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.content__list-item {
+  margin-bottom: 26px;
+}
+
+.content__card-link {
+  text-decoration: none;
+}
+
+.content__video-card-title {
+  font-family: "Oswald";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 4px;
+}
+
+.content__video-card-description {
+  font-family: "Fira Sans Condensed";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 90%;
+  color: #fff;
+}
+
+.content__list-item:last-child {
+  padding-bottom: 0;
+}
+
+.more-button {
+  width: 399px ;
+  max-height: 34px ;
+}
+
+.content__list-item:active,
+.button:active {
+  background-color: #545050;
+}
+
+.content__list-item:hover .content__video-card-title,
+.content__list-item:hover .content__video-card-description,
+.button:hover  {
+  text-decoration: underline; 
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.button:focus-visible {
+  outline: 1px solid white;
+  outline-offset: 2px;
+}
+
+.content__video-card:focus {
+  outline: 2px solid white;
+  outline-offset: 2px; 
 }
