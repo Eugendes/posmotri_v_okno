@@ -82,7 +82,7 @@ ol {
 }
 
 .search-form__fieldset {
-  width: 225px ;
+  width: 225px;
   border: none;
 }
 
@@ -116,7 +116,7 @@ ol {
 }
 
 .search-form__label-text {
-  user-select: none ;
+  user-select: none;
 }
 
 .search-form__textfield {
@@ -127,10 +127,10 @@ ol {
 }
 
 .input {
-  border: none; 
+  border: none;
   outline: none;
-  background-color: transparent; 
-  padding: 0; 
+  background-color: transparent;
+  padding: 0;
   margin: 0;
   font: inherit;
   color: #fff;
@@ -142,11 +142,11 @@ ol {
 .input:focus-visible {
   outline: 1px solid white;
   outline-offset: 2px;
-} 
+}
 
 .search-form__textfield.input {
   width: 100%;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   min-width: 225px;
 }
 
@@ -170,7 +170,7 @@ ol {
 }
 
 .search-form__label:has(input:checked) .search-form__pseudo-checkbox::after {
-  content:'' ;
+  content: "";
   width: 15px;
   height: 15px;
   background-color: #fff;
@@ -218,7 +218,7 @@ ol {
 }
 
 .title {
-  font-family: 'Oswald';
+  font-family: "Oswald";
   width: 260px;
   height: 210px;
   font-style: normal;
@@ -245,7 +245,6 @@ ol {
   padding-bottom: 0;
 }
 
-
 .content__list-item:active,
 .button:active {
   background-color: #545050;
@@ -255,7 +254,7 @@ ol {
 .content__list-item:hover .content__video-card-description,
 .button:hover,
 .search-form__label-text:hover {
-  text-decoration: underline; 
+  text-decoration: underline;
   text-decoration-skip-ink: none;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
@@ -273,7 +272,7 @@ ol {
 
 .content__video-card:focus {
   outline: 2px solid white;
-  outline-offset: 2px; 
+  outline-offset: 2px;
 }
 
 .content__video-card-description-container {
@@ -299,12 +298,12 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  max-width: 100%; 
+  max-width: 100%;
   max-height: 107px;
   display: block;
 }
 
 .more-button {
-  width: 399px ;
-  max-height: 34px ;
+  width: 399px;
+  max-height: 34px;
 }
