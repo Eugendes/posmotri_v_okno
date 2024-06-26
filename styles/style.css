@@ -301,8 +301,8 @@ ol {
   max-height: 34px;
 }
 
-
-.search-form__label:focus-within, .search-form__checkbox:focus-visible {
+.search-form__label:focus-within,
+.search-form__checkbox:focus-visible {
   outline: 1px solid white; /* Общий outline для чекбоксов и текста */
   outline-offset: 2px;
 }
