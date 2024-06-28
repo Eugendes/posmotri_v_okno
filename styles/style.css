@@ -104,11 +104,6 @@ ol {
   margin-bottom: 0px;
 }
 
-.search-form__checkbox {
-  position: absolute;
-  left: 0;
-}
-
 .search-form__checkbox-list {
   display: flex;
   justify-content: space-between;
