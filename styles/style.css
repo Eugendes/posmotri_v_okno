@@ -275,13 +275,13 @@ ol {
   display: block;
   text-decoration: none;
   margin: 0 2px;
-  width: 381px;
+  width: 380px;
   box-sizing: border-box;
 }
 
 .content__video-card {
   display: grid;
-  grid-template-columns: auto 194px;
+  grid-template-columns: auto 180px;
   height: 107px;
 }
 
